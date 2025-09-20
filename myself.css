@@ -1,0 +1,12 @@
+body {
+    background: rgb(104, 168, 232);
+}
+.listt {
+    background-color: antiquewhite;
+    height: 60px;
+    width: 1000px;
+}
+.list {
+    display: inline-flex;
+    gap: 30px;
+}

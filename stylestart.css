@@ -1,0 +1,89 @@
+
+body {
+    background-image: url('img/ิbackgound.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.topper {
+    font-size: 60px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 10px;
+}
+
+.topper2 {
+    font-size: 30px;
+    text-align: center;
+}
+.loww {
+    text-align: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+#lookbutton {
+    border-radius:  15px;
+    padding: 15px 75px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+
+    background-color: rgb(41, 180, 255);
+    font-size: 25px;
+}
+#lookbutton::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+}
+
+#lookbutton::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #1d67f0, #aae6ff, #140ac5, #e0d9ff,
+        #00FFD5, #002BFF, #00eeff, #6523ff
+    );
+    position: absolute;
+    top:-2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter:blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+#lookbutton:hover::before{
+    opacity: 1;
+}
+#lookbutton:active:after {
+    background: transparent;
+}
+#lookbutton:active {
+    color: #e42121;
+    font-weight: bold;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+footer {
+    text-align: center;
+}
