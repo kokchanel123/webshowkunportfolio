@@ -89,3 +89,16 @@ body {
 footer {
     text-align: center;
 }
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        line-height: 2;
+        min-height: 100%;
+    }
+    .topper {
+        font-size: 30px;
+    }
+    .topper2 {
+        font-size: 22px;
+    }
+}

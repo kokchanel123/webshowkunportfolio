@@ -60,3 +60,10 @@ body {
     margin: 10px;
 }
 
+@media (max-width: 768px) {
+    body {
+        min-height: 100%;
+       
+        
+    }
+}
