@@ -49,6 +49,7 @@ body {
     margin: 10px;
     margin-top: 10px;
     border-radius: 12%;
+    border: 3px solid ;
 }
 .selftext {
     margin: 10px;
@@ -60,8 +61,42 @@ body {
     margin: 10px;
 }
 
+.lang {
+    margin-top: 10px;
+    border: none;
+}
+.startier {
+    display: flex;
+    line-height: 40px;
+    
+}
+.starpython,.starhtml,.starcss,.starjavascript,.starcpusspuss {
+    list-style: none;
+}
+.starpython {
+    margin-left: 140px;
+}
+.starhtml {
+    margin-left: 65px;
+}
+.starcss{
+    margin-left: 80px;
+}
+.starjavascript {
+    margin-left: 80px;
+}
+.starcpusspuss {
+    margin-left: 100px ;
+}
+
+
+.imgstar {
+    width: 50px;
+    height: 100%;
+}
 @media (max-width: 768px) {
     body {
         min-height: 100%;
+        transform: scale(0.5);
     }
 }
