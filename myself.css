@@ -107,20 +107,5 @@ body {
     margin: 15px;
 }
 @media (max-width: 768px) {
-    body {
-        min-height: 100%;
-    }
-    .list {
-        display: inline-block;
-        margin-top: 10px;
-        font-size: 23px;
-        line-height: 40px;
-    }
-    .proflie {
-        display: block;
-        
-    }
-    .self {
-        margin-left: 35px;
-    }
 }
+
